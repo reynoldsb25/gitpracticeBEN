@@ -3,7 +3,15 @@
 ##################
 
 def getNRandom(n):
-	'''takes in an integer and returns a list of n random integers between 1 and 10, inclusive'''
+    '''takes in an integer and returns a list of n random integers between 1 and 10, inclusive'''
+    random_list = []
+    import random
+    for i in range (1, n+1):
+        random_list.append(random.randrange(1, 10))
+    return random_list
+    pass
+    
+getNRandom(10)) 
     pass
 
 def multiplyRandom(numbers):
